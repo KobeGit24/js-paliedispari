@@ -25,8 +25,3 @@ function reverse(userWord) {
     }
     return;
 }
-
-
-// PARI E DISPARI
-
-var user = prompt('inserisci una parola');
