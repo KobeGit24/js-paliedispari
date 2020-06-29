@@ -9,13 +9,11 @@ function EvenOdd(user) {
     var sum = computer + userNumber;
     if (user == 'pari' && sum%2==0) {
         console.log('vince utente');
-    } else if (user == 'pari' && sum%2) {
-        console.log('vince computer');
-    } else if (user == 'dispari' && sum%2==0) {
-        console.log('vince computer');
     } else if (user == 'dispari' && sum%2) {
         console.log('vince utente');
-    } 
+    } else {
+        console.log('vince computer');
+    }
     return;
 }
 
