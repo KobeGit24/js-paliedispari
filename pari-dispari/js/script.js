@@ -5,14 +5,14 @@ do {
 
 var userNumber = parseInt(prompt('inserisci un numero da 1 a 5'));
 var computer = random(1,5);
-EvenOdd(choice);
+console.log(computer);
+
+var result = computer + userNumber;
+EvenOdd(choice,result);
 
 // Funzioni
-function EvenOdd(user) {
-    var sum = computer + userNumber;
-    if (user == 'pari' && sum%2==0) {
-        console.log('vince utente');
-    } else if (user == 'dispari' && sum%2) {
+function EvenOdd(user, sum) {
+    if (user == 'pari' && sum%2==0 || user == 'dispari' && sum%2) {
         console.log('vince utente');
     } else {
         console.log('vince computer');
